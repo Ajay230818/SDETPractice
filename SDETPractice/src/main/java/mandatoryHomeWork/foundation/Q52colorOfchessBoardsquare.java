@@ -1,7 +1,5 @@
 package mandatoryHomeWork.foundation;
 
-import java.util.Arrays;
-
 import org.junit.Assert;
 import org.junit.Test;
 
