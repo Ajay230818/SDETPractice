@@ -22,11 +22,17 @@ public class Q3823productof3numbers {
 	}
 
 	public int product(int[] num) {
-		int prod=1;
-		for (int i = 0; i < num.length; i++) {
-			prod=prod*num[i];
+		int max=0;
+		for (int i = 0; i < num.length-1; i++) {
+			for (int j = i+1; j < num.length-1; j++) {
+				for (int k = j+1; k < num.length-1; j++) {
+					if(num[i]*num[j]*num[k]>max) {
+						max=num[i]*num[j]*num[k];
+					}
+				}
+			}
 		}
-		return prod;
+		return max;
 	}
 
 }
