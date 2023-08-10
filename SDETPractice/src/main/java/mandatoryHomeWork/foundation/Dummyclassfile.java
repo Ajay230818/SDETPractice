@@ -1,17 +1,37 @@
 package mandatoryHomeWork.foundation;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Set;
 
 public class Dummyclassfile {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int [] nums= {-1,-98,-1,100,99,98};
-		Arrays.sort(nums);
-		System.out.println(Arrays.toString(nums));
-		int option1 = nums[0] * nums[1] * nums[nums.length - 1];
-		int option2 = nums[nums.length - 1] * nums[nums.length - 2] * nums[nums.length - 3];
-		System.out.println(Math.max(option1, option2));
+		String s = "abcdefgh";
+		String repchars="";
+		List<String> lisrepcharstring=new ArrayList<String>();
+		int count=0;
+		Set<Character> dupele=new HashSet<Character>();
+		for (int i = 0; i < s.length(); i++) {
+			if(dupele.add(s.charAt(i))) {
+				repchars=repchars+s.charAt(i);
+			}else {
+				lisrepcharstring.add(repchars);
+				i=i-1;
+				repchars="";
+				dupele.clear();
+			}
+			}
+	for (int i = 0; i < lisrepcharstring.size(); i++) {
+		if(lisrepcharstring.get(i).length()>count) {
+			count=lisrepcharstring.get(i).length();
+		}
+	}
+	System.out.println(count);
 	}
 
 }
