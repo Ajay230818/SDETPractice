@@ -1,0 +1,25 @@
+package mandatoryHomeWork.foundation;
+
+import java.util.Iterator;
+
+public class Q18823diffelesumdigitsum {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int [] nums= {1,15,6,3};
+		int elesum=0;
+		int digitsum=0;
+		int digit=0;
+		for (int i = 0; i < nums.length; i++) {
+			elesum=elesum+nums[i];
+			while(nums[i]>0) {
+				digit=nums[i]%10;
+				digitsum+=digit;
+				nums[i]=nums[i]/10;
+			}
+		}
+		System.out.println(elesum);
+		System.out.println(digitsum);
+	}
+
+}

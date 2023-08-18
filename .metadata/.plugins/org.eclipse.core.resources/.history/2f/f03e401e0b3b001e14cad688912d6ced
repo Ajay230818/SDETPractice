@@ -1,0 +1,30 @@
+package mandatoryHomeWork.foundation;
+
+import org.junit.Test;
+
+import junit.framework.Assert;
+
+public class Q15823 {
+	
+	@Test
+	public void test1() {
+		Assert.assertEquals(0, difffprodandsum(123));
+	}
+	
+	@Test
+	public void test2() {
+		Assert.assertEquals(-2, difffprodandsum(101));
+	}
+	
+	public int difffprodandsum(int num){
+		int prod=1;
+		int sum=0;
+		while(num>0){
+			prod=prod*num%10;
+			sum=sum+num%10;
+			num=num/10;
+			}
+		return prod-sum;
+		
+	}
+}

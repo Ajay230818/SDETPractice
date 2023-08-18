@@ -1,0 +1,42 @@
+package mandatoryHomeWork.foundation;
+
+import org.junit.Assert;
+import org.junit.Test;
+
+public class Qchallenge11SpyNumber {
+	
+	@Test
+	public void test1() {
+		Assert.assertEquals(true, spynum(132));
+	}
+	
+	@Test
+	public void test2() {
+		Assert.assertEquals(true, spynum(1124));
+	}
+	
+	@Test
+	public void test3() {
+		Assert.assertEquals(true, spynum(134));
+	}
+
+	public boolean spynum(int num) {
+		// TODO Auto-generated method stub
+		int sum=0;
+		int prod=1;
+		int digit=1;
+		while(num>0) {
+			digit=num%10;
+			sum=sum+digit;
+			prod=prod*digit;
+			num=num/10;		
+		}
+		if(prod==sum) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+	
+
+}

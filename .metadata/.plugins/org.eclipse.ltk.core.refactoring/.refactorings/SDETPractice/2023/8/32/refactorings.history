@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;mandatoryHomeWork.foundation.Q57&apos; to &apos;Q57Threedivisors&apos;&#x0D;&#x0A;- Original project: &apos;SDETPractice&apos;&#x0D;&#x0A;- Original element: &apos;mandatoryHomeWork.foundation.Q57&apos;&#x0D;&#x0A;- Renamed element: &apos;mandatoryHomeWork.foundation.Q57Threedivisors&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Q57&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;mandatoryHomeWork.foundation{Q57.java[Q57" matchStrategy="1" name="Q57Threedivisors" qualified="false" references="true" similarDeclarations="false" stamp="1691626157263" textual="false" version="1.0"/>
+</session>

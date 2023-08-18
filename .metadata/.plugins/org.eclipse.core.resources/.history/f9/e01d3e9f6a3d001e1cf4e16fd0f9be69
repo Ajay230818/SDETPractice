@@ -1,0 +1,17 @@
+package mandatoryHomeWork.foundation;
+
+import java.util.Iterator;
+
+public class Q18823diffelesumdigitsum {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int [] nums= {1,15,6,3};
+		int sum=0;
+		for (int i = 0; i < nums.length; i++) {
+			sum=sum+nums[i];
+		}
+		System.out.println(sum);
+	}
+
+}

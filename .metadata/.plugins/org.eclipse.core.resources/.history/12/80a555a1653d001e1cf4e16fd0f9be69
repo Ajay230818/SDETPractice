@@ -1,0 +1,52 @@
+package mandatoryHomeWork.foundation;
+
+import java.util.Arrays;
+
+import org.junit.Test;
+
+import junit.framework.Assert;
+
+public class Q18823Squaringofsortedarray {
+	
+	/* pseudo code 
+	 * 1.iterate though the loop
+	 * 2.get the value of nums[i] and sqaure it.
+	 * 3.sort the array and return the o/p
+	 * 
+	 * Test Data :
+	 * int [] nums = [-4,-1,0,3,10]
+	 * int [] nums = [-7,-3,2,3,11]
+	 * int [] nums = [-7,-3,-6,-8,-9]
+	 * int [] nums = [5,4,6,7,8]
+	 * */
+	
+	@Test
+	public void test1() {
+		int [] actual=new int [] {16,1,0,9,100};
+		Assert.assertEquals(actual, squaringofnumber(new int [] {-4,-1,0,3,10}));
+	}
+	
+	@Test
+	public void test2() {
+		
+	}
+	
+	@Test
+	public void test3() {
+		
+	}
+
+	public String squaringofnumber(int[] num) {
+		int newarr[]=new int[num.length];
+		for(int i=0;i<num.length;i++){
+			num[i] = num[i]*num[i];
+        }
+        Arrays.sort(num);
+        System.out.println(Arrays.toString(num));
+        for (int i = 0; i < num.length; i++) {
+			newarr[i]=num[i];
+		}
+        return Arrays.toString(newarr);
+	}	
+
+}
