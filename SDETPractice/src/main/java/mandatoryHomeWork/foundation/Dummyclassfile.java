@@ -65,31 +65,24 @@ System.out.println(count);
 		 */
 		 
 		 //class room exercise -3 Day 3 DSA
-		 String [][] empdetails= {{"Ajay","29"},{"vijoy","31"},{"Vinoth","28"}};
-		 Employeeclass ec=new Employeeclass();
-		 System.out.println(ec.employeedetails(empdetails));	 
+			/*
+			 * String [][] empdetails= {{"Ajay","29"},{"vijoy","31"},{"Vinoth","28"}};
+			 * Employeeclass ec=new Employeeclass();
+			 * System.out.println(ec.employeedetails(empdetails));
+			 * 
+			 * ArrayList<Integer> al=new ArrayList<Integer>(10); al.add(1); al.add(2);
+			 * al.add(3); al.add(4); al.add(5); al.add(6); al.add(7); al.add(8); al.add(9);
+			 * al.add(10); System.out.println(al); al.add(11); System.out.println(al); int
+			 * sum = 0; int[] arr = {1,2,3,4,5}; for(int i =0 ; i <= arr.length;i++ ){ sum
+			 * += arr[i]; }
+			 */
 		 
-		 ArrayList<Integer> al=new ArrayList<Integer>(10);
-		 al.add(1);
-		 al.add(2);
-		 al.add(3);
-		 al.add(4);
-		 al.add(5);
-		 al.add(6);
-		 al.add(7);
-		 al.add(8);
-		 al.add(9);
-		 al.add(10);
-		 System.out.println(al);
-		 al.add(11);
-		 System.out.println(al);
-		 int sum = 0;
-		 int[] arr = {1,2,3,4,5};
-		 for(int i =0 ; i <= arr.length;i++ ){
-		 sum += arr[i];
-		 }
-		 
-
+		int [] arr= {1,2,2};
+		HashSet<Integer> set= new HashSet<Integer>();
+		for (int i = 0; i < arr.length; i++) {
+			set.add(arr[i]);
+		}
+		System.out.println(set);
 }
 	
 	
