@@ -7,6 +7,13 @@ import org.junit.Test;
 
 public class Q12Canplaceflowers {
 	
+	/* Pseudo code 
+	 * 1.if n =0 there are no flowers to place hence return as true
+	 * 2.if n<0 kindly check for the condition whether i-1,i and i+1 are zero and place the flower in i position
+	 * 3.whenever you are placing the flower reduce the flower count by 1
+	 * 4.At the end if n value is 0 return true else return false
+	 * */
+	
 	@Test
 	public void test1() {
 		Assert.assertEquals(true, placeflowerbeds(new int [] {1,0,0,0,1}, 1));
