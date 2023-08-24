@@ -31,7 +31,7 @@ public class Q14ArrayPartitioning {
 	public  int Arraypartition(int [] nums) {
 		int sum=0;
 		Arrays.sort(nums);
-		System.out.println(Arrays.toString(nums));
+		//System.out.println(Arrays.toString(nums));
 		for (int i = 0; i < nums.length; i++) {
 			if(i%2==0) {
 			sum+=nums[i];
