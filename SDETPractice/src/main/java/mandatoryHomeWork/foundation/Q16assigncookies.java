@@ -4,12 +4,29 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
-public class Q16assigncookies {
+import org.junit.Test;
 
-	public static void main(String[] args) {
+import junit.framework.Assert;
+
+public class Q16assigncookies {
+	
+	@Test
+	public void test1() {
+		Assert.assertEquals(2, childertocookies(new int [] {1,2,3}, new int [] {1,1,3}));
+	}
+	
+	@Test
+	public void test2() {
+		Assert.assertEquals(1, childertocookies(new int [] {1,2,3}, new int [] {2}));
+	}
+	
+	@Test
+	public void test3() {
+		Assert.assertEquals(3, childertocookies(new int [] {10,8,6,7}, new int [] {5,6,7,8}));
+	}
+
+	public int childertocookies(int []g,int  []s) {
 		// TODO Auto-generated method stub
-		int [] g= {10,7,8,9};
-		int []s= {5,6,9,10};
 		int count=0; 
 		int candyiterate=0;
 
@@ -30,7 +47,7 @@ public class Q16assigncookies {
 			}
 		}
 
-		System.out.println(count);
+		return count;
 
 	}
 
