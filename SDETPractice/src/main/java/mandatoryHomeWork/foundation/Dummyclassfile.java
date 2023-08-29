@@ -112,17 +112,21 @@ public class Dummyclassfile {
 	
 	
 public static void main(String [] args) {
-	String s="My name is parthiv";
-	String temp = "";
-	String out="";
-	String [] words=s.split(" ");
-	for (int i = 0; i < words.length; i++) {
-		for (int j = words[i].length()-1; j >=0; j--) {
-			temp+=words[i].charAt(j);
-		}
-		out+=temp+" ";
-		temp="";
-	}	
-	System.out.println(out.trim());
+	/*
+	 * String s="My name is parthiv"; String temp = ""; String out=""; String []
+	 * words=s.split(" "); for (int i = 0; i < words.length; i++) { for (int j =
+	 * words[i].length()-1; j >=0; j--) { temp+=words[i].charAt(j); } out+=temp+" ";
+	 * temp=""; } System.out.println(out.trim());
+	 */
+	
+	String mergedString="";
+	String word1="abcdef";
+	String word2="pqrs";
+	int word1len=word1.length();
+	int word2len=word2.length();
+	if(word1len>word2len) {
+		mergedString=word1.substring(0, word2len)+word2.substring(0,word2len);
+		System.out.println(mergedString);
+	}
 }
 }
