@@ -1,5 +1,6 @@
 package mandatoryHomeWork.foundation;
 
+import java.nio.file.spi.FileSystemProvider;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
@@ -119,14 +120,19 @@ public static void main(String [] args) {
 	 * temp=""; } System.out.println(out.trim());
 	 */
 	
-	String mergedString="";
-	String word1="abcdef";
-	String word2="pqrs";
-	int word1len=word1.length();
-	int word2len=word2.length();
-	if(word1len>word2len) {
-		mergedString=word1.substring(0, word2len)+word2.substring(0,word2len);
-		System.out.println(mergedString);
-	}
+	/*
+	 * String mergedString=""; String word1="abcdef"; String word2="pqrs"; int
+	 * word1len=word1.length(); int word2len=word2.length(); if(word1len>word2len) {
+	 * mergedString=word1.substring(0, word2len)+word2.substring(0,word2len);
+	 * System.out.println(mergedString); }
+	 */
+	
+	char ch='K';
+	int i=1;
+	String s="";
+	s=s+ch;
+	System.out.println(s);
+	s=s+i;
+	System.out.println(s);
 }
 }
