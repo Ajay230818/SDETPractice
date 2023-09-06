@@ -127,12 +127,10 @@ public static void main(String [] args) {
 	 * System.out.println(mergedString); }
 	 */
 	
-	char ch='K';
-	int i=1;
-	String s="";
-	s=s+ch;
-	System.out.println(s);
-	s=s+i;
-	System.out.println(s);
+	/*
+	 * char ch='K'; int i=1; String s=""; s=s+ch; System.out.println(s); s=s+i;
+	 * System.out.println(s);
+	 */
+	
 }
 }
