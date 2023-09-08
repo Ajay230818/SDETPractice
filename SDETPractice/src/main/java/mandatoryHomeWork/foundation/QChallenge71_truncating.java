@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import junit.framework.Assert;
 
-public class QChallenge71truncating {
+public class QChallenge71_truncating {
 	
 	/* TestData
 	 * s = "Hello how are you Contestant", k = 4

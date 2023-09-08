@@ -3,7 +3,7 @@ package mandatoryHomeWork.foundation;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class QChallenge11SpyNumber {
+public class QChallenge11_SpyNumber {
 	
 	
 	/* PseudoCode 

@@ -3,9 +3,11 @@ package mandatoryHomeWork.foundation;
 import java.nio.file.spi.FileSystemProvider;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 import org.junit.Test;
@@ -132,5 +134,33 @@ public static void main(String [] args) {
 	 * System.out.println(s);
 	 */
 	
-}
+	//String sentence="thequickbrownfoxjumpsoverthelazydog";
+	/*
+	 * int sentlengremdup = sentence.replaceAll("(.)(?=.*\\1)", "").length();
+	 * System.out.println(sentlengremdup);
+	 */
+	
+	String key="the quick brown fox jumps over the lazy dog";
+	String keywithoutspace=key.replaceAll(" ", "");
+	char[] keyarr = keywithoutspace.toCharArray();
+	String message="vkbs bs t suepuv";
+	char[] messarr = message.toCharArray();
+	char ch='a';
+	StringBuilder out = new StringBuilder();
+	Map<Character, Character> map=new HashMap<Character, Character>();
+	
+	for (int i = 0; i < keyarr.length; i++) {
+		if(!map.containsKey(keyarr[i]))
+            map.put(keyarr[i],ch++);
+	}
+	
+	for (int i = 0; i < messarr.length; i++) {
+		if(map.containsKey(messarr[i]))
+			out.append(map.get(messarr[i]));
+        else
+        	out.append(messarr[i]);
+	}
+
+    System.out.println(out.toString());
+	}
 }
