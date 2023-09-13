@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import junit.framework.Assert;
 
-public class Qchallenge76_StringinBalancedstring {
+public class Qchallenge77_StringinBalancedstring {
 	
 	@Test
 	public void test1() {

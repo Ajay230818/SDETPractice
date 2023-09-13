@@ -7,7 +7,7 @@ import org.junit.Test;
 
 
 
-public class Qchallenge75_NumberOflinestoWriteString {
+public class Qchallenge76_NumberOflinestoWriteString {
 	
 	@Test
 	public void test1() {
