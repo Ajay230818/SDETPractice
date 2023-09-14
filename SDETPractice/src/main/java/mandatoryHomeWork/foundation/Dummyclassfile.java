@@ -140,27 +140,29 @@ public static void main(String [] args) {
 	 * System.out.println(sentlengremdup);
 	 */
 	
-	String key="the quick brown fox jumps over the lazy dog";
-	String keywithoutspace=key.replaceAll(" ", "");
-	char[] keyarr = keywithoutspace.toCharArray();
-	String message="vkbs bs t suepuv";
-	char[] messarr = message.toCharArray();
-	char ch='a';
-	StringBuilder out = new StringBuilder();
-	Map<Character, Character> map=new HashMap<Character, Character>();
+	/*
+	 * String key="the quick brown fox jumps over the lazy dog"; String
+	 * keywithoutspace=key.replaceAll(" ", ""); char[] keyarr =
+	 * keywithoutspace.toCharArray(); String message="vkbs bs t suepuv"; char[]
+	 * messarr = message.toCharArray(); char ch='a'; StringBuilder out = new
+	 * StringBuilder(); Map<Character, Character> map=new HashMap<Character,
+	 * Character>();
+	 * 
+	 * for (int i = 0; i < keyarr.length; i++) { if(!map.containsKey(keyarr[i]))
+	 * map.put(keyarr[i],ch++); }
+	 * 
+	 * for (int i = 0; i < messarr.length; i++) { if(map.containsKey(messarr[i]))
+	 * out.append(map.get(messarr[i])); else out.append(messarr[i]); }
+	 * 
+	 * System.out.println(out.toString());
+	 */
 	
-	for (int i = 0; i < keyarr.length; i++) {
-		if(!map.containsKey(keyarr[i]))
-            map.put(keyarr[i],ch++);
+	String num="1210";
+	int count=0;
+	for (int i = 0; i < num.length(); i++) {
+		for (int j = 0; j < num.length(); j++) {
+			//if(i==nums[j])
+		}
 	}
-	
-	for (int i = 0; i < messarr.length; i++) {
-		if(map.containsKey(messarr[i]))
-			out.append(map.get(messarr[i]));
-        else
-        	out.append(messarr[i]);
-	}
-
-    System.out.println(out.toString());
 	}
 }

@@ -36,7 +36,7 @@ public class Qchallenge74_FaultyKeyboard {
     }
 		return rev;
 		}
-    public static String reversestring(String ds) {
+    public String reversestring(String ds) {
 		out="";
 		for (int i = ds.length()-1; i >=0; i--) {
 			out+=ds.charAt(i);
