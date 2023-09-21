@@ -6,7 +6,7 @@ import org.junit.Test;
 
 import junit.framework.Assert;
 
-public class QChallenge88_SubArraysofk {
+public class QChallenge88_SubArraysofk_v1 {
 	
 	@Test
 	public void test1() {

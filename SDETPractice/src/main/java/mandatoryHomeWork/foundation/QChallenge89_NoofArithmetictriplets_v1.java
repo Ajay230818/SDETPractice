@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import junit.framework.Assert;
 
-public class QChallenge89_NoofArithmetictriplets {
+public class QChallenge89_NoofArithmetictriplets_v1 {
 	
 	@Test
 	public void test1() {

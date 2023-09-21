@@ -6,7 +6,7 @@ import org.junit.Test;
 
 import junit.framework.Assert;
 
-public class QChallenge87_Lexicographically {
+public class QChallenge87_Lexicographically_V1 {
 	
 	@Test
 	public void test1() {
