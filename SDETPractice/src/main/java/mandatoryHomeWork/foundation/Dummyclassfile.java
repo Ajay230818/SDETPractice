@@ -1,6 +1,7 @@
 package mandatoryHomeWork.foundation;
 
 import java.nio.file.spi.FileSystemProvider;
+import java.sql.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -9,6 +10,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.stream.IntStream;
 
 import org.junit.Test;
 
@@ -112,57 +114,146 @@ public class Dummyclassfile {
 	 * 
 	 * }
 	 */
-	
-	
-public static void main(String [] args) {
-	/*
-	 * String s="My name is parthiv"; String temp = ""; String out=""; String []
-	 * words=s.split(" "); for (int i = 0; i < words.length; i++) { for (int j =
-	 * words[i].length()-1; j >=0; j--) { temp+=words[i].charAt(j); } out+=temp+" ";
-	 * temp=""; } System.out.println(out.trim());
-	 */
-	
-	/*
-	 * String mergedString=""; String word1="abcdef"; String word2="pqrs"; int
-	 * word1len=word1.length(); int word2len=word2.length(); if(word1len>word2len) {
-	 * mergedString=word1.substring(0, word2len)+word2.substring(0,word2len);
-	 * System.out.println(mergedString); }
-	 */
-	
-	/*
-	 * char ch='K'; int i=1; String s=""; s=s+ch; System.out.println(s); s=s+i;
-	 * System.out.println(s);
-	 */
-	
-	//String sentence="thequickbrownfoxjumpsoverthelazydog";
-	/*
-	 * int sentlengremdup = sentence.replaceAll("(.)(?=.*\\1)", "").length();
-	 * System.out.println(sentlengremdup);
-	 */
-	
-	/*
-	 * String key="the quick brown fox jumps over the lazy dog"; String
-	 * keywithoutspace=key.replaceAll(" ", ""); char[] keyarr =
-	 * keywithoutspace.toCharArray(); String message="vkbs bs t suepuv"; char[]
-	 * messarr = message.toCharArray(); char ch='a'; StringBuilder out = new
-	 * StringBuilder(); Map<Character, Character> map=new HashMap<Character,
-	 * Character>();
-	 * 
-	 * for (int i = 0; i < keyarr.length; i++) { if(!map.containsKey(keyarr[i]))
-	 * map.put(keyarr[i],ch++); }
-	 * 
-	 * for (int i = 0; i < messarr.length; i++) { if(map.containsKey(messarr[i]))
-	 * out.append(map.get(messarr[i])); else out.append(messarr[i]); }
-	 * 
-	 * System.out.println(out.toString());
-	 */
-	
-	String num="1210";
-	int count=0;
-	for (int i = 0; i < num.length(); i++) {
-		for (int j = 0; j < num.length(); j++) {
-			//if(i==nums[j])
+
+	public static void main(String[] args) {
+		/*
+		 * String s="My name is parthiv"; String temp = ""; String out=""; String []
+		 * words=s.split(" "); for (int i = 0; i < words.length; i++) { for (int j =
+		 * words[i].length()-1; j >=0; j--) { temp+=words[i].charAt(j); } out+=temp+" ";
+		 * temp=""; } System.out.println(out.trim());
+		 */
+
+		/*
+		 * String mergedString=""; String word1="abcdef"; String word2="pqrs"; int
+		 * word1len=word1.length(); int word2len=word2.length(); if(word1len>word2len) {
+		 * mergedString=word1.substring(0, word2len)+word2.substring(0,word2len);
+		 * System.out.println(mergedString); }
+		 */
+
+		/*
+		 * char ch='K'; int i=1; String s=""; s=s+ch; System.out.println(s); s=s+i;
+		 * System.out.println(s);
+		 */
+
+		// String sentence="thequickbrownfoxjumpsoverthelazydog";
+		/*
+		 * int sentlengremdup = sentence.replaceAll("(.)(?=.*\\1)", "").length();
+		 * System.out.println(sentlengremdup);
+		 */
+
+		/*
+		 * String key="the quick brown fox jumps over the lazy dog"; String
+		 * keywithoutspace=key.replaceAll(" ", ""); char[] keyarr =
+		 * keywithoutspace.toCharArray(); String message="vkbs bs t suepuv"; char[]
+		 * messarr = message.toCharArray(); char ch='a'; StringBuilder out = new
+		 * StringBuilder(); Map<Character, Character> map=new HashMap<Character,
+		 * Character>();
+		 * 
+		 * for (int i = 0; i < keyarr.length; i++) { if(!map.containsKey(keyarr[i]))
+		 * map.put(keyarr[i],ch++); }
+		 * 
+		 * for (int i = 0; i < messarr.length; i++) { if(map.containsKey(messarr[i]))
+		 * out.append(map.get(messarr[i])); else out.append(messarr[i]); }
+		 * 
+		 * System.out.println(out.toString());
+		 */
+
+//	String num="1210";
+//	int count=0;
+//	for (int i = 0; i < num.length(); i++) {
+//		for (int j = 0; j < num.length(); j++) {
+//			//if(i==nums[j])
+//		}
+//	}
+		/*
+		 * String word="a"; for(int i=0;i<word.length();i++){
+		 * System.out.println(word.charAt(i)); }
+		 */
+		/*
+		 * String str="aaaaaaaabbbbbbbbbbxccccccccccddd"; StringBuilder sb = new
+		 * StringBuilder(); str.chars().distinct().forEach(c -> sb.append((char) c));
+		 * System.out.println(sb);
+		 */
+		/*
+		 * IntStream chars = str.chars().distinct();
+		 * chars.mapToObj(Character::toChars).forEach(System.out::println);
+		 */
+		// IntStream distinct = chars.distinct();
+		// distinct.mapToObj(Character::toChars).forEach(System.out::println);
+
+		/*
+		 * String str1="aabbccvveerru  uiiooz"; String outputString =
+		 * str1.replaceAll("(.)(?=.*\\1)", "").replaceAll(" ", "");
+		 * System.out.println(outputString);
+		 */
+
+		/*
+		 * String s = "parthivajay"; String rev = ""; for (int i = s.length() - 1; i >=
+		 * 0; i--) { rev = rev + s.charAt(i); }
+		 * System.out.println("Solution 1 Using for loop " + rev); StringBuffer sb = new
+		 * StringBuffer(s); sb.reverse();
+		 * System.out.println("Solution 2 Using Stringbuffer " + sb); StringBuilder
+		 * sbuild = new StringBuilder(s); sbuild.reverse();
+		 * System.out.println("Solution 3 Using Stringbuilder " + sbuild); StringBuilder
+		 * res = new StringBuilder(); for (int i = s.length() - 1; i >= 0; i--)
+		 * res.append(s.charAt(i));
+		 * System.out.println("Solution 4 Using Stringbuilder append " +
+		 * res.toString());
+		 */
+
+		/*
+		 * char[] chararr = s.toCharArray(); int k=0; int l=s.length()-1; char temp;
+		 * while(k<l) { temp=chararr[k]; chararr[k]=chararr[l]; chararr[l]=temp; k++;
+		 * l--; }
+		 */
+
+		// String s="parthivajay";
+		/*
+		 * char[] chararr = s.toCharArray(); int startindex = 0; int endindex =
+		 * s.length() - 1; char temp; while (startindex < endindex) { temp =
+		 * chararr[startindex]; chararr[startindex] = chararr[endindex];
+		 * chararr[endindex] = temp; startindex++; endindex--; }
+		 * 
+		 * System.out.println("Solution 5 Using two pointers " +
+		 * String.valueOf(chararr));
+		 */
+		
+		/*
+		 * int [] nums= {2,3,4,5}; int target=9; int start = 0; int end = nums.length-1;
+		 * while(start<end) { if(nums[start]+nums[end]==target ){ return new int[]
+		 * {start,end}; } else if(nums[start]+nums[end]>target) { end--; } else
+		 * if(nums[start]+nums[end]<target) { start++; } } return new int[] {-1,-1};
+		 */
+		
+		//two pointers reverse
+		
+//		int [] nums= {0,1,0,3,12};
+//		int startind=0;
+//		int endind=startind+1;
+//		
+//		while(startind<nums.length && endind<nums.length) {
+//			if(nums[startind]==0 ) {
+//				if(nums[endind]!=0) {
+//				int temp=nums[endind];
+//				nums[endind]=nums[startind];
+//				nums[startind]=temp;
+//			}else {
+//				endind++;
+//			}
+//			}else {
+//				startind++;
+//				endind++;
+//			}
+//		}
+//		System.out.println(Arrays.toString(nums));
+		
+		char ch='h';
+		char ch1='j';
+		
+		if(ch>ch1) {
+			System.out.println(ch);
+		}else {
+			System.out.println(ch1);
 		}
-	}
 	}
 }
