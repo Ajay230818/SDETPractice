@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import junit.framework.Assert;
 
-public class QChallenge70_maxwordsInSentence {
+public class Qchallenge70_maxwordsInSentence {
 	
 	
 	@Test
